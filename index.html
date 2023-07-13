@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zews</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"
+        style="position: relative; background-color: #3b59ac !important;">
+        <form class="d-flex search-en" role="search">
+            <input class="form-control me-2" type="search" placeholder="e.g. Science" id="search-text"
+                aria-label="Search">
+            <button class="btn btn-light" type="submit" id="search-button">Search</button>
+        </form>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" onclick="reload()"><img src="assets/landscape logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    <li class="nav-item" id="sports" onclick="onNavItemClick('sports')">
+                        <a class="nav-link " aria-current="page" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item" id="finance" onclick="onNavItemClick('finance')">
+                        <a class="nav-link " aria-current="page" href="#">Finance</a>
+                    </li>
+                    <li class="nav-item" id="politics" onclick="onNavItemClick('politics')">
+                        <a class="nav-link " aria-current="page" href="#">Politics</a>
+                    </li>
+                    <li class="nav-item" id="technology" onclick="onNavItemClick('technology')">
+                        <a class="nav-link " aria-current="page" href="#">Technology</a>
+                    </li>
+
+                    <li class="nav-item" id="Economy" onclick="onNavItemClick('Economy')">
+                        <a class="nav-link " aria-current="page" href="#">Economy</a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="font-size: 25px;">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                            <li class="dropdown-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                            <li class="dropdown-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                            <li class="dropdown-item" id="technology" onclick="onNavItemClick('technology')">Technology
+                        </ul>
+                    </li> -->
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+
+        <div class="card-news">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo deleniti,
+                    quaerat cum minima
+                    suscipit ut amet aut, similique facere voluptatum et debitis officia quibusdam commodi, quasi
+                    corrupti? Totam, suscipit nostrum.</p>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
