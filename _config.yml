@@ -1,2 +1,2 @@
-gem install "jekyll-theme-primer"
+gem install "jekyll-theme-minimal"
 theme: jeykll-theme-minimal
